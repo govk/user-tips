@@ -2,10 +2,64 @@
 
 
 
-## cmd内网发送信息
+## cmd:
+
+### 内网发送信息
 
 ```
 MSG /server:内网ip * "找你没事情，下午出去玩吧"
+```
+
+### 查看当前所有连接过的wifi密码
+
+```
+netsh wlan show profiles
+
+netsh wlan show profile name="" key=clear
+```
+
+### 查看ip和自己的外网地址
+
+```
+ipconfig /all
+curl -L ip.tool.lu
+```
+
+### 远程控制
+
+```
+mstsc
+```
+
+### 修改字体颜色
+
+```
+color all
+color a
+永久修改
+regedit编辑查找DefaultColor
+数据数值改成a
+```
+
+### 查看电脑上的用户防入侵
+
+```
+net user
+net user name /del
+```
+
+### 电脑卡检查系统完整性
+
+```
+sfc /SCANNOW
+```
+
+
+
+## 网络ip
+
+```
+cip.cc
 ```
 
 
